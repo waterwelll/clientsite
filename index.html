@@ -1,127 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Letao Intelligent Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <div class="logo">LETAO</div>
-      <nav class="main-nav">
+    <div class="container header-container">
+      <div class="logo"><img src="assets/letao-logo.png" width="300px" alt="" srcset=""></div>
+      <nav class="main-nav" id="navMenu">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
     </div>
+      
+    </div>
+  </section>
+
+  
+
+  
+
+  
   </header>
 
   <section class="hero">
-    <div class="container">
-        <img src="assets/letaologo.png" alt="" srcset="">
+    <div class="hero-content">
       <h1>Letao Intelligent Solutions</h1>
       <p>Inspire innovation and lead with intelligence.</p>
-      <a href="#" class="btn btn-primary">Get Started</a>
+      <div class="hero-cta-buttons" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#about" class="btn btn-primary">Get Started</a>
+        <a href="#services" class="btn btn-secondary">Our Services</a>
+      </div>
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="container about-columns">
-      <div class="about-text">
-        <h2>About Us</h2>
+      <div class="about-text text-margin">
+        <h4>Welcome to Letao Intelligent Solutions</h4>
+        <h2>Grow Your Business with Us</h2>
         <p>
-          Letao Intelligent Solutions (Pty) Ltd was established in South Africa 
-          and now operating in the United Kingdom to address the need for the 
-          competent supply of professional services across all areas of General IT, 
-          SAP and complementary technologies. Letao is a level 1 B-BBEE Contributor 
-          working towards SAP Partner Accreditation and SAP Education Partner.
-          <br><br>
-          Letao specialise in providing recruitment and consulting services across 
-          the SAP suite of software products and IT technologies and methodology 
-          through the SAP landscape and ecosystems.
-          <br><br>
-          Letao is a dynamic and innovative firm specializing in IT and HR
-          services tailored for SAP consultants and organizations. Leveraging
-          SAP technologies.
-          We blend technical expertise leveraging SAP technologies with
-          people-centric strategies to drive business transformation and growth.
-          <br><br>
-          SAP Consulting & Implementation Expertise in SAP modules like EPR end to end 
-          user.
-          S/4HANA, Success Factors, Ariba, and more, helping businesses to
-          navigate through the landscape.
-          <br><br>
-          IT Infrastructure & Support Robust IT solutions ensuring seamless
-          technology ecosystems for SAP environments, security, technology
-          ecosystems for SAP, integration and scalability.
+          <b>Letao Intelligent Solutions (Pty) Ltd</b> was established in South Africa and now operating in the United Kingdom to address the need for the competent supply of professional services across all areas of General IT, SAP, and complementary technologies. Letao is a level 1 B-BBEE Contributor working towards SAP Partner Accreditation.
+        </p>
+        <p>
+          We specialize in SAP consulting, implementation, IT infrastructure, and recruitment. Letao blends technical SAP expertise with people-first HR strategies to drive business transformation and sustainable success.
         </p>
       </div>
       <div class="about-image">
-        <img src="https://www.torosolutions.co.uk/wp-content/uploads/2025/07/Physical-Security-Audit.jpg" alt="Letao Intelligent Solutions Logo" />
+        <img src="https://www.torosolutions.co.uk/wp-content/uploads/2025/07/Physical-Security-Audit.jpg" alt="Letao About Image" />
       </div>
     </div>
-  </section>
 
-  <section class="services">
+      <section id="services" class="services">
     <div class="container">
-      <h2>What We Do</h2>
+      <h2>Our Services</h2>
       <div class="service-cards">
         <div class="card">
+          <div class="card-symbol" aria-hidden="true" style="font-size:2.2rem;margin-bottom:0.5rem;">
+            <!-- Computer/Monitor SVG -->
+            <svg width="32" height="32" fill="none" stroke="#1c33b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
           <h3>IT Infrastructure & Support</h3>
           <p>
-            Robust scalable solutions tailored for SAP environments, Security
-            integration and ecosystem design. Ongoing system support and
-            performance optimization
+            Robust scalable solutions tailored for SAP environments, security integration, and ongoing technical support.
           </p>
         </div>
         <div class="card">
+          <div class="card-symbol" aria-hidden="true" style="font-size:2.2rem;margin-bottom:0.5rem;">
+            <!-- Users/People SVG -->
+            <svg width="32" height="32" fill="none" stroke="#1c33b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M17 11a4 4 0 1 0-8 0v1a4 4 0 0 0 8 0v-1z"/><path d="M21 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/></svg>
+          </div>
           <h3>HR & Recruitment Services</h3>
           <p>
-            Specialized in SAP and IT talent acquisition, General IT
-            recruitment and SAP resource management. Access to
-            consultants with 10+ years of experience Onboarding,
-            offboarding, and career development.
+            End-to-end recruitment, HR consulting, and people-first strategies for SAP and IT teams.
           </p>
         </div>
         <div class="card">
-          <h3>Managed Contract & Payroll Services (TES)</h3>
+          <div class="card-symbol" aria-hidden="true" style="font-size:2.2rem;margin-bottom:0.5rem;">
+            <!-- Gear/Settings SVG -->
+            <svg width="32" height="32" fill="none" stroke="#1c33b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>SAP Consulting</h3>
           <p>
-            Flexible outsourced employment solutions, Employer-of-record
-            services, Payroll management, tax compliance, medical aid Structured income
+            Implementation, optimization, and support for SAP solutions to drive business transformation.
           </p>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="portfolio">
-    <div class="container">
-      <h2>Recent Clients</h2>
-      <div class="portfolio-items">
-        <div class="item"><img src="assets/clients.png" alt=""><div class="overlay">Recent Clients</div></div>
+  <section class="banner">
+    <div class="container banner-stats">
+      <div class="stat-block">
+        <div class="stat-title">+5 years</div>
+        <div class="stat-desc">IT Consulting Field Experience</div>
       </div>
-      <a href="#" class="btn btn-secondary">View More</a>
+      <div class="stat-block">
+        <div class="stat-title">98%</div>
+        <div class="stat-desc">Overall Client Satisfaction Rate </div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-title">20+</div>
+        <div class="stat-desc">Industries Served Across SAP Solutions</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-title">100%</div>
+        <div class="stat-desc">Certified Inbound Staff Consultants</div>
+      </div>
     </div>
   </section>
 
-  <div class="space"></div>
-  <section class="contact">
+  <section class="banner-logos">
+    <h3>Some of Our Clients</h3>
+    <div class="container client-logos">
+      <div class="client-logo-block">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/South_African_Broadcasting_Corporation_logo.svg/960px-South_African_Broadcasting_Corporation_logo.svg.png?20150525045432" alt="Client 1 Logo" />
+        <div class="client-logo-name"></div>
+      </div>
+      <div class="client-logo-block">
+        <img src="https://logovectorseek.com/wp-content/uploads/2021/04/bcx-business-connexion-pty-ltd-logo-vector.png" alt="Client 2 Logo" />
+        <div class="client-logo-name"></div>
+      </div>
+      <div class="client-logo-block">
+        <img src="https://companieslogo.com/img/orig/SSL_BIG-b85eb681.png?t=1720244494" alt="Client 3 Logo" />
+        <div class="client-logo-name"></div>
+      </div>
+      <div class="client-logo-block">
+        <img src="https://companieslogo.com/img/orig/DGH.JO-00033c20.png?t=1720244491" alt="Client 4 Logo" />
+        <div class="client-logo-name"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
     <div class="container">
       <h2>Let’s Work Together</h2>
       <p>Reach out today to start your project or even just to say hello.</p>
-      <br><br><a href="#" class="btn btn-primary">Contact Us</a>
+      <a href="#contactform" class="btn btn-primary">Contact Us</a>
     </div>
   </section>
-  <div class="space"></div>
+   <section class="form-section" id="contactform">
+  <form class="service-form" style="margin-top:2.5rem;max-width:500px;margin-left:auto;margin-right:auto;">
+        <h3 style="text-align:center;">Request a Service</h3>
+        <div style="margin-bottom:1rem;">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" required style="width:100%;padding:0.5rem;">
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required style="width:100%;padding:0.5rem;">
+        </div>
+       
+        <div style="margin-bottom:1rem;">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" style="width:100%;padding:0.5rem;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Submit</button>
+      </form>
+   </section>
   
+
   <footer class="site-footer">
     <div class="container">
-      <br><br>
-      <p>© 2025 CompanyName. All rights reserved.</p>
+      <p>&copy; 2025 Letao Intelligent Solutions. All rights reserved.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
+ 
 </body>
 </html>
